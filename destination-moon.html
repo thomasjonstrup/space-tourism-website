@@ -1,37 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+		/>
+		<!-- Google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+		<!-- Our Custom CSS -->
+		<link rel="stylesheet" href="./index.css" />
 
-  01 Pick your destination
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/favicon-32x32.png"
+		/>
 
-  Moon
-  Mars
-  Europa
-  Titan
+		<title>Frontend Mentor | Space tourism website</title>
+	</head>
+	<body class="destination">
+		<a class="skip-to-content" href="#main">Skip to content</a>
+		<header class="primary-header flex">
+			<div class="logo">
+				<img src="./assets/shared/logo.svg" alt="space tourism logo" />
+			</div>
+			<button
+				class="mobile-nav-toggle"
+				aria-controls="primary-navigation"
+				aria-expanded="false"
+			>
+				<span class="sr-only">Menu</span>
+			</button>
+			<nav>
+				<ul
+					id="primary-navigation"
+					data-visible="false"
+					class="primary-navigation underline-indicators flex"
+				>
+					<li>
+						<a
+							class="
+								uppercase
+								text-white
+								ff-sans-cond
+								letter-spacing-2
+							"
+							href="index.html"
+							><span aria-hidden="true">00</span> Home</a
+						>
+					</li>
+					<li class="active">
+						<a
+							class="
+								uppercase
+								text-white
+								ff-sans-cond
+								letter-spacing-2
+							"
+							href="destination-europa.html"
+							><span aria-hidden="true">01</span> Destination</a
+						>
+					</li>
+					<li>
+						<a
+							class="
+								uppercase
+								text-white
+								ff-sans-cond
+								letter-spacing-2
+							"
+							href="crew-commander.html"
+							><span aria-hidden="true">02</span> Crew</a
+						>
+					</li>
+					<li>
+						<a
+							class="
+								uppercase
+								text-white
+								ff-sans-cond
+								letter-spacing-2
+							"
+							href="technology-capsule.html"
+							><span aria-hidden="true">03</span> Technology</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-  Moon
-
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
-
-  Avg. distance
-  384,400 km
-
-  Est. travel time
-  3 days
-</body>
+		<main id="main" class="grid-container grid-container--moon">
+			<div>
+				<div class="img">
+					<img src="./assets/destination/image-moon.webp" alt="" />
+				</div>
+				<div class="tab-list flex underline-indicators">
+					<button
+						aria-selected="true"
+						class="
+							uppercase
+							text-accent
+							ff-sans-cond
+							letter-spacing-2
+							bg-dark
+						"
+					>
+						Moon
+					</button>
+					<button
+						aria-selected="false"
+						class="
+							uppercase
+							text-accent
+							ff-sans-cond
+							letter-spacing-2
+							bg-dark
+						"
+					>
+						Mars
+					</button>
+					<button
+						aria-selected="false"
+						class="
+							uppercase
+							text-accent
+							ff-sans-cond
+							letter-spacing-2
+							bg-dark
+						"
+					>
+						Europa
+					</button>
+					<button
+						aria-selected="false"
+						class="
+							uppercase
+							text-accent
+							ff-sans-cond
+							letter-spacing-2
+							bg-dark
+						"
+					>
+						Titian
+					</button>
+				</div>
+			</div>
+			<!-- 01 Pick your destination Moon Mars Europa Titan Moon See our planet
+			as you’ve never seen it before. A perfect relaxing trip away to help
+			regain perspective and come back refreshed. While you’re there, take
+			in some history by visiting the Luna 2 and Apollo 11 landing sites.
+			Avg. distance 384,400 km Est. travel time 3 days -->
+			<script src="./index.js" defer></script>
+		</main>
+	</body>
 </html>
