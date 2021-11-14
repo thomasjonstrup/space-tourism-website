@@ -682,3 +682,43 @@ body {
 .destination-meta p {
 	font-size: 1.75rem;
 }
+
+/* Crew */
+.crew {
+	background-image: url("./assets/crew/background-crew-mobile.jpg");
+}
+
+@media (min-width: 35em) {
+	.crew {
+		background-position: center center;
+		background-image: url("./assets/crew/background-crew-tablet.jpg");
+	}
+}
+@media (min-width: 45em) {
+	.crew {
+		background-image: url("./assets/crew/background-crew-desktop.jpg");
+	}
+}
+
+.grid-container--crew {
+	--flow-space: 2rem;
+	grid-template-areas: "title" "image" "tabs" "content";
+}
+
+.grid-container--crew > picture {
+	grid-area: image;
+	max-width: 60%;
+	border-bottom: 1px solid hsl(var(--clr-white) / 0.1);
+}
+
+.grid-container--crew > .tab-list {
+	grid-area: tabs;
+}
+
+.grid-container--crew > .crew-info {
+	grid-area: content;
+}
+
+.crew-details h2 {
+	color: hsl(var(--clr-white) / 0.5);
+}
