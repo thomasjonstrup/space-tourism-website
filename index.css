@@ -453,7 +453,6 @@ h1 {
 		display: block;
 		position: absolute;
 		z-index: 2000;
-		top: 2rem;
 		right: 1rem;
 		background: transparent;
 		background-image: url("./assets/shared/icon-hamburger.svg");
@@ -462,6 +461,7 @@ h1 {
 		border: 0;
 		width: 1.5rem;
 		aspect-ratio: 1;
+		margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
 	}
 
 	.mobile-nav-toggle[aria-expanded="true"] {
